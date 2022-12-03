@@ -26,7 +26,8 @@
 #include "usbh_msc.h"
 
 /* USER CODE BEGIN Includes */
-
+#include "stdio.h"
+#include "fatfs.h"
 /* USER CODE END Includes */
 
 /* USER CODE BEGIN PV */
@@ -103,10 +104,12 @@ static void USBH_UserProcess  (USBH_HandleTypeDef *phost, uint8_t id)
 
   case HOST_USER_DISCONNECTION:
   Appli_state = APPLICATION_DISCONNECT;
+  f_mount(0, "", 0); // Unmount on disconnect
   break;
 
   case HOST_USER_CLASS_ACTIVE:
   Appli_state = APPLICATION_READY;
+  retUSBH = f_mount(&USBHFatFS, (const TCHAR*)USBHPath, 0); // Mount on connection
   break;
 
   case HOST_USER_CONNECTION:

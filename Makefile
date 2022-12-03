@@ -1,5 +1,8 @@
 all: consoleOS levelLoader
 
+flash: all
+	$(MAKE) -C startupLevelLoader flash
+
 consoleOS: common
 	$(MAKE) -C consoleOSLevel
 
