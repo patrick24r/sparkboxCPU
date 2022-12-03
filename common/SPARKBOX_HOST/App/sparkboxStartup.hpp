@@ -6,7 +6,7 @@
 extern "C" {
 #endif
 
-void startupTask(void * argument);
+void sparkboxStartupTask(void * argument);
 
 #ifdef __cplusplus
 }
