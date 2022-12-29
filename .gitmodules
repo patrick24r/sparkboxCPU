@@ -1,6 +1,6 @@
 [submodule "common/FreeRTOS/FreeRTOS-Kernel"]
 	path = common/FreeRTOS/FreeRTOS-Kernel
-	url = https://github.com/FreeRTOS/FreeRTOS-Kernel/
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
 [submodule "common/Drivers/stm32h7xx_hal_driver"]
 	path = common/Drivers/stm32h7xx_hal_driver
 	url = https://github.com/STMicroelectronics/stm32h7xx_hal_driver.git

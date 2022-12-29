@@ -1,10 +1,11 @@
-# Object files
+# Object and build files
 *.o
 *.ko
 *.obj
 *.elf
 *.map
 **/obj/**
+**/build/**
 
 # Libraries
 *.lib
@@ -20,13 +21,10 @@
 
 # Executables
 *.exe
+*.elf
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
 *.bin
-
-# Ignore all generated code
-**/boardConfig/*/**
-!**/boardConfig/*/**/*.ioc
