@@ -1,3 +1,9 @@
-[submodule "common/Middlewares/Third_Party/FreeRTOS"]
-	path = common/Middlewares/Third_Party/FreeRTOS
-	url = https://github.com/patrick24r/freertosnewlib
+[submodule "common/FreeRTOS/FreeRTOS-Kernel"]
+	path = common/FreeRTOS/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel/
+[submodule "common/Drivers/stm32h7xx_hal_driver"]
+	path = common/Drivers/stm32h7xx_hal_driver
+	url = https://github.com/STMicroelectronics/stm32h7xx_hal_driver.git
+[submodule "common/USBHost"]
+	path = common/USBHost
+	url = https://github.com/STMicroelectronics/stm32_mw_usb_host.git

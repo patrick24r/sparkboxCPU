@@ -27,5 +27,6 @@
 *.hex
 *.bin
 
+# Ignore all generated code
 **/boardConfig/*/**
 !**/boardConfig/*/**/*.ioc
